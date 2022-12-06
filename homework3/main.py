@@ -3,7 +3,7 @@ from sly import Lexer
 import json
 
 """
-lessons = lesson lessons | empty
+lessons ::= lesson lessons | empty
 lesson ::= "(" "L" name groups students ")"
 group_list ::= "(" "G" groups ")"
 groups ::= name groups | empty
