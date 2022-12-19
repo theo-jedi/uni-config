@@ -33,6 +33,9 @@ class VShell:
                 raise FileNotFoundError("File not found")
             return path + "/"
 
+        if addition[:-1] != "/":
+            addition += "/"
+
         try:
             self.archive.getinfo(self.current_path + addition)
         except KeyError:
