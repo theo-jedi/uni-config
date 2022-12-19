@@ -94,6 +94,7 @@ if __name__ == '__main__':
     lexer = SLexer()
     parser = SParser()
 
+    print("Data file", end=": ")
     program = open(input(), encoding='utf-8').read()
 
     tokens = lexer.tokenize(program)
